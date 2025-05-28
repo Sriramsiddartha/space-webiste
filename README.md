@@ -1,6 +1,10 @@
 # Space Explorer 🌌
 
-An interactive web application that lets users explore the wonders of space through various features and tools.
+[![Development Status](https://img.shields.io/badge/status-in%20development-yellow)](https://github.com/yourusername/space-explorer)
+
+An interactive web application that lets users explore the wonders of space through various features and tools. This project is currently in active development, with new features being added regularly.
+
+> **Note:** This project is under active development. Some features are still being implemented and may not be fully functional.
 
 ## Features 🚀
 
@@ -20,6 +24,8 @@ An interactive web application that lets users explore the wonders of space thro
 - Font Awesome for icons
 
 ## Getting Started 🏁
+
+> **Development Notice:** This project is still in development. Some features may be incomplete or not yet implemented.
 
 1. Clone the repository
 2. Open `index.html` in your web browser
@@ -51,7 +57,11 @@ space-explorer/
 
 ## Contributing 🤝
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. Since this project is in active development, we're particularly interested in:
+- Bug reports
+- Feature suggestions
+- Code improvements
+- Documentation enhancements
 
 ## License 📝
 
