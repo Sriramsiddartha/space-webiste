@@ -1,0 +1,33 @@
+name,radiant,bestmonth,startmonth,startday,endmonth,endday,hemisphere,preferredhemisphere
+# Annual Showers
+Lyrids,Lyra,April,April,16,April,22,Northern,Northern
+Eta Aquarids,Aquarius,May,April,19,May,28,"Northern, Southern",Southern
+Orionids,Orion,October,October,2,November,7,"Northern, Southern",Both
+Perseids,Perseus,August,July,17,August,24,Northern,Northern
+Leonids,Leo,November,November,6,November,30,"Northern, Southern",Both
+Quadrantids,Boötes,January,December,28,January,12,Northern,Northern
+Delta Aquarids,Aquarius,July,July,12,August,23,Southern,Southern
+Draconids,Draco,October,October,6,October,10,Northern,Northern
+Geminids,Gemini,December,December,4,December,17,"Northern, Southern",Both
+Ursids,Ursa Minor,December,December,17,December,26,Northern,Northern
+
+# Irregular/Non-Annual Showers
+Andromedids,Andromeda,November,November,25,December,6,"Northern, Southern",Both
+# Note: Andromedids are irregular, associated with Comet 3D/Biela
+# Last major outburst: 2011, Next predicted: 2023-2024
+
+Alpha Monocerotids,Monoceros,November,November,15,November,25,"Northern, Southern",Both
+# Note: Irregular outbursts every ~10 years
+# Last major outburst: 2019, Next predicted: 2029
+
+Tau Herculids,Hercules,May,May,19,June,19,"Northern, Southern",Both
+# Note: Associated with Comet 73P/Schwassmann-Wachmann
+# Last major outburst: 2022, Next predicted: 2033
+
+June Bootids,Bootes,June,June,22,July,2,"Northern, Southern",Both
+# Note: Irregular, associated with Comet 7P/Pons-Winnecke
+# Last major outburst: 2020, Next predicted: 2024
+
+Aurigids,Auriga,September,August,25,September,8,"Northern, Southern",Both
+# Note: Irregular, associated with Comet Kiess
+# Last major outburst: 2019, Next predicted: 2027

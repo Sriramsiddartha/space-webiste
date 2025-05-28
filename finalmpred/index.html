@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Overlay -->
+    <div class="menu-overlay"></div>
+
+    <!-- Drawer Menu -->
+    <div class="drawer-menu">
+        <div class="menu-header">
+            <h2>Space Explorer</h2>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="menu-nav">
+            <div class="menu-section">
+                <h3>Main Features</h3>
+                <ul>
+                    <li>
+                        <a href="#solar-system">
+                            <i class="fas fa-sun"></i>
+                            Solar System Explorer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#meteor-shower">
+                            <i class="fas fa-meteor"></i>
+                            Meteor Shower Predictor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#space-weather">
+                            <i class="fas fa-cloud-sun"></i>
+                            Space Weather Tracker
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Tools & Resources</h3>
+                <ul>
+                    <li>
+                        <a href="#space-calendar">
+                            <i class="fas fa-calendar-alt"></i>
+                            Space Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#space-quiz">
+                            <i class="fas fa-question-circle"></i>
+                            Space Quiz
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Account</h3>
+                <ul>
+                    <li>
+                        <a href="#profile">
+                            <i class="fas fa-user"></i>
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Space Explorer</span>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="stars">
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="planet"></div>
+                <div class="planet"></div>
+                <div class="planet"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Explore the Wonders of Space</h1>
+                <p>Discover the mysteries of the universe with our interactive space tools</p>
+                <button class="cta-button" id="explore-button">Start Exploring</button>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section id="solar-system" class="content-section">
+            <div class="container">
+                <h2>Solar System Explorer</h2>
+                <div class="solar-system-container">
+                    <div id="solar-system-canvas"></div>
+                    <div id="planet-info" class="planet-info">
+                        <div class="planet-info-content">
+                            <h3>Select a planet to view its details</h3>
+                            <div class="planet-details">
+                                <div class="planet-image"></div>
+                                <div class="planet-text">
+                                    <h4 class="planet-name"></h4>
+                                    <p class="planet-description"></p>
+                                    <div class="planet-stats">
+                                        <div class="stat">
+                                            <span class="stat-label">Diameter:</span>
+                                            <span class="stat-value"></span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-label">Distance from Sun:</span>
+                                            <span class="stat-value"></span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-label">Orbital Period:</span>
+                                            <span class="stat-value"></span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-label">Surface Temperature:</span>
+                                            <span class="stat-value"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="toggle-orbits" class="control-button">
+                            <i class="fas fa-circle"></i> Toggle Orbits
+                        </button>
+                        <button id="toggle-stars" class="control-button">
+                            <i class="fas fa-star"></i> Toggle Stars
+                        </button>
+                        <button id="reset-view" class="control-button">
+                            <i class="fas fa-sync"></i> Reset View
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="meteor-shower" class="content-section">
+            <div class="container">
+                <h2>Meteor Shower Predictor</h2>
+                <div class="date-selector">
+                    <div class="info-text">Select a date to check for meteor showers</div>
+                    <div class="controls">
+                        <div class="control-group">
+                            <label for="day">Day:</label>
+                            <select id="day"></select>
+                        </div>
+                        <div class="control-group">
+                            <label for="month">Month:</label>
+                            <select id="month">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <label for="year">Year:</label>
+                            <select id="year"></select>
+                        </div>
+                        <button id="checkButton" class="cta-button">Check Meteor Showers</button>
+                    </div>
+                </div>
+                <div id="results" class="results"></div>
+            </div>
+        </section>
+
+        <section id="space-weather" class="content-section">
+            <h2>Space Weather Tracker</h2>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="space-calendar" class="content-section">
+            <h2>Space Calendar</h2>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="space-quiz" class="content-section">
+            <h2>Space Quiz</h2>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="profile" class="content-section">
+            <h2>Profile</h2>
+            <p>Coming soon...</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="solar-system.js"></script>
+</body>
+</html> 
